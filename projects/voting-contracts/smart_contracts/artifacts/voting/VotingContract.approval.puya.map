@@ -1,0 +1,6056 @@
+{
+  "version": 3,
+  "sources": [
+    "../../voting/contract.algo.ts"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAMA;;AAAA;;;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAA;;;AAAA;;;;;;;;;;;;;;;;;;;;;;AAAA;AAAA;;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;;;AA0BE;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;;;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAUM;AAjBS;AAiBT;AAAA;;AAAJ;;;AACS;AAlBI;AAkBJ;AAAA;AAAA;AAAP;AAnCW;;AAsCb;;AAAA;AArCQ;;AAsCR;;AAAA;AArCQ;;AAsCR;;AAAA;AArCQ;;AAsCR;;AAAA;AAAA;;AAAA;AArCQ;;AAsCR;;AAAA;AAnCO;;AAqCoB;AAA3B;AApCO;;AAqCoB;AAA3B;AApCO;;AAqCoB;AAA3B;AApCO;;AAqCoB;AAA3B;AAhCW;;AAiCoB;AAA/B;AAEmB;AAAf;;AACA;AAAJ;;;AAAoC;;AAAf;;AACjB;;AAAA;AAAJ;;;AAAoC;;AAAf;;AApCT;;AAqCZ;;AAAA;AAEyB;;AAAA;;AAAA;AA1Cb;AA0CZ;AAAA;AAzCY;;AA0Ca;;AAAzB;AAvCa;AAwCoB;AAAjC;AAvCc;;;;;;;;;AAwCd;;AAAA;AAlCF;AAAA;AAqCA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACS;AA7CM;AA6CN;AAAA;AAAmC;AAAnC;AAAP;AACO;;AAAyB;AAlDpB;AAkDoB;AAAA;AAAzB;AAAP;AACO;;;AAA2C;AAhDtC;;AAgDsC;AAAA;AAAf;;AAAA;AAA5B;;;;AAAP;AAGkB;;AAAd;AA9CK;AA8CL;AAAA;;AAAJ;;;AACuB;;AAAd;AA/CA;AA+CA;AAAA;AAAA;AAAP;AAGE;AAAuB;AAAvB;AAAJ;;;AACsB;AAjEf;;AAiEe;AAAA;AAA2B;AAA3B;AAjEf;;AAiEL;AAAA;AASsB;AAlEb;;AAkEa;AAAA;AAA+B;AAA/B;AAlEb;;AAkEX;AAAA;AACc;;AA7DL;AA6DgC;AAAzC;AACiB;;AA7DL;;AA6DZ;;AAAA;AAtBF;AAAA;AAYa;AAAuB;AAAvB;AAAJ;;;AACe;AAlEf;;AAkEe;AAAA;AAA2B;AAA3B;AAlEf;;AAkEL;AAAA;;;;AACS;AAAuB;;AAAvB;AAAJ;;;AACe;AAnEf;;AAmEe;AAAA;AAA2B;AAA3B;AAnEf;;AAmEL;AAAA;;;;AACS;AAAuB;;AAAvB;AAAJ;;;AACe;AApEf;;AAoEe;AAAA;AAA2B;AAA3B;AApEf;;AAoEL;AAAA;;;;;;;;AAUA;AAjFK;;AAiFL;AAAA;AACA;AAjFK;;AAiFL;AAAA;AACA;AAjFK;;AAiFL;AAAA;AACA;AAjFK;;AAiFL;AAAA;AACA;AA7ES;;AA6ET;AAAA;AACA;AA7EU;;AA6EV;AAAA;AANK;;AAAA;AAAA;;;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;;AAAA;AAAA;AAAA;AAAA;AAAA;AADT;AAAA;AAAA;AAAA;AAAA;AAAA;AAYS;AAlGM;;AAkGN;AAAA;AADT;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAIA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AACuB;AAAjB;AAAJ;;;AAAgC;AArGxB;;AAqGwB;AAAA;AADlC;AAAA;AAAA;AAAA;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAEM;AAAiB;AAAjB;AAAJ;;;AAAgC;AArGxB;;AAqGwB;AAAA;AAFlC;;;AAGM;AAAiB;;AAAjB;AAAJ;;;AAAgC;AArGxB;;AAqGwB;AAAA;AAHlC;;;AAIS;AArGC;;AAqGD;AAAA;AAJT;;;AAQM;AA5FS;AA4FT;AAAA;AAAmC;AAAnC;AAAA;;;AAAyC;;AAAyB;AAhG1D;AAgG0D;AAAA;AAAzB;AAAzC;;;AACY;AAFlB;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAIgB;AAJhB;;;AAQM;;AAA0B;AAvGlB;AAuGkB;AAAA;AAA1B;AAAJ;;;AAAoE;AADtE;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAES;AAxGK;AAwGL;AAAA;AAAyB;;AAAzB;AAFT;;;AAMS;;AAAqB;AA3GhB;;AA2GgB;AAAA;AAArB;AAAP;AAxGa;AAyGoB;AAAjC;AAFF;AAAA;AAMoB;;AAAd;AAzGK;AAyGL;AAAA;;AAAJ;;;AACuB;;AAAd;AA1GA;AA0GA;AAAA;AAFX;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAIgB;AAJhB;;;AAQoB;;AAAd;AAhHK;AAgHL;AAAA;;AAAA;;;AAAoD;;AAAd;AAhHjC;AAgHiC;AAAA;AAA2C;AAA3C;AAAtC;;;AACsB;;AAAjB;AAhHG;;AAgHH;AAAA;AAFX;AAAA;AAAA;AAAA;AAAA;AAAA;AAAA;AAIgB;AAJhB",
+  "op_pc_offset": 0,
+  "pc_events": {
+    "1": {
+      "subroutine": "@algorandfoundation/algorand-typescript/arc4/index.d.ts::Contract.approvalProgram",
+      "params": {},
+      "block": "main",
+      "stack_in": [],
+      "op": "intcblock 0 1 2 8"
+    },
+    "7": {
+      "op": "bytecblock \"voted\" 0x151f7c75 \"active\" \"endTime\" \"v1\" \"v2\" \"v3\" \"v4\" \"total\" \"optCount\" \"question\" \"opt1\" \"opt2\" \"opt3\" \"opt4\" \"creator\" \"choice\""
+    },
+    "106": {
+      "op": "txn NumAppArgs",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "108": {
+      "op": "bz main___algots__.defaultCreate@17",
+      "stack_out": []
+    },
+    "111": {
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "113": {
+      "op": "!",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "114": {
+      "error": "OnCompletion must be NoOp",
+      "op": "assert // OnCompletion must be NoOp",
+      "stack_out": []
+    },
+    "115": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "tmp%4#0"
+      ]
+    },
+    "117": {
+      "op": "assert",
+      "stack_out": []
+    },
+    "118": {
+      "op": "pushbytess 0xdc9b3d93 0x31d5c300 0x54d4f9e9 0xfba8c52c 0x78fe61da 0x99f9c1b3 0x13550a91 0x1d048a5b 0x7ec9c8a9 0x82a272d7 // method \"createPoll(byte[],byte[],byte[],byte[],byte[],uint64,uint64)void\", method \"vote(uint64)void\", method \"getResults()uint64[]\", method \"getPollQuestion()byte[]\", method \"getOption(uint64)byte[]\", method \"checkPollActive()uint64\", method \"getRemainingTime()uint64\", method \"endPoll()void\", method \"checkHasVoted()uint64\", method \"getMyVote()uint64\"",
+      "defined_out": [
+        "Method(checkHasVoted()uint64)",
+        "Method(checkPollActive()uint64)",
+        "Method(createPoll(byte[],byte[],byte[],byte[],byte[],uint64,uint64)void)",
+        "Method(endPoll()void)",
+        "Method(getMyVote()uint64)",
+        "Method(getOption(uint64)byte[])",
+        "Method(getPollQuestion()byte[])",
+        "Method(getRemainingTime()uint64)",
+        "Method(getResults()uint64[])",
+        "Method(vote(uint64)void)"
+      ],
+      "stack_out": [
+        "Method(createPoll(byte[],byte[],byte[],byte[],byte[],uint64,uint64)void)",
+        "Method(vote(uint64)void)",
+        "Method(getResults()uint64[])",
+        "Method(getPollQuestion()byte[])",
+        "Method(getOption(uint64)byte[])",
+        "Method(checkPollActive()uint64)",
+        "Method(getRemainingTime()uint64)",
+        "Method(endPoll()void)",
+        "Method(checkHasVoted()uint64)",
+        "Method(getMyVote()uint64)"
+      ]
+    },
+    "170": {
+      "op": "txna ApplicationArgs 0",
+      "defined_out": [
+        "Method(checkHasVoted()uint64)",
+        "Method(checkPollActive()uint64)",
+        "Method(createPoll(byte[],byte[],byte[],byte[],byte[],uint64,uint64)void)",
+        "Method(endPoll()void)",
+        "Method(getMyVote()uint64)",
+        "Method(getOption(uint64)byte[])",
+        "Method(getPollQuestion()byte[])",
+        "Method(getRemainingTime()uint64)",
+        "Method(getResults()uint64[])",
+        "Method(vote(uint64)void)",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "Method(createPoll(byte[],byte[],byte[],byte[],byte[],uint64,uint64)void)",
+        "Method(vote(uint64)void)",
+        "Method(getResults()uint64[])",
+        "Method(getPollQuestion()byte[])",
+        "Method(getOption(uint64)byte[])",
+        "Method(checkPollActive()uint64)",
+        "Method(getRemainingTime()uint64)",
+        "Method(endPoll()void)",
+        "Method(checkHasVoted()uint64)",
+        "Method(getMyVote()uint64)",
+        "tmp%6#0"
+      ]
+    },
+    "173": {
+      "op": "match createPoll vote getResults getPollQuestion getOption checkPollActive getRemainingTime endPoll checkHasVoted getMyVote",
+      "stack_out": []
+    },
+    "195": {
+      "op": "err"
+    },
+    "196": {
+      "block": "main___algots__.defaultCreate@17",
+      "stack_in": [],
+      "op": "txn OnCompletion",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "tmp%7#0"
+      ]
+    },
+    "198": {
+      "op": "!",
+      "defined_out": [
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0"
+      ]
+    },
+    "199": {
+      "op": "txn ApplicationID",
+      "defined_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%9#0"
+      ]
+    },
+    "201": {
+      "op": "!",
+      "defined_out": [
+        "tmp%10#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "tmp%8#0",
+        "tmp%10#0"
+      ]
+    },
+    "202": {
+      "op": "&&",
+      "defined_out": [
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "tmp%11#0"
+      ]
+    },
+    "203": {
+      "error": "OnCompletion must be NoOp && can only call when creating",
+      "op": "assert // OnCompletion must be NoOp && can only call when creating",
+      "stack_out": []
+    },
+    "204": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "205": {
+      "op": "return",
+      "stack_out": []
+    },
+    "206": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.createPoll[routing]",
+      "params": {},
+      "block": "createPoll",
+      "stack_in": [],
+      "op": "pushbytes \"\"",
+      "stack_out": [
+        "count#0"
+      ]
+    },
+    "208": {
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "tmp%0#0"
+      ]
+    },
+    "211": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "count#0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "212": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "count#0",
+        "tmp%0#0",
+        "tmp%0#0 (copy)",
+        "0"
+      ]
+    },
+    "213": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "tmp%0#0",
+        "aggregate%array_length%0#0"
+      ]
+    },
+    "214": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "aggregate%array_length%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "tmp%0#0",
+        "aggregate%array_length%0#0",
+        "2"
+      ]
+    },
+    "215": {
+      "op": "+",
+      "defined_out": [
+        "add%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "tmp%0#0",
+        "add%0#0"
+      ]
+    },
+    "216": {
+      "op": "dig 1",
+      "stack_out": [
+        "count#0",
+        "tmp%0#0",
+        "add%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "218": {
+      "op": "len",
+      "defined_out": [
+        "add%0#0",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "tmp%0#0",
+        "add%0#0",
+        "len%0#0"
+      ]
+    },
+    "219": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "220": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "count#0",
+        "tmp%0#0"
+      ]
+    },
+    "221": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0"
+      ]
+    },
+    "224": {
+      "op": "txna ApplicationArgs 2",
+      "defined_out": [
+        "question#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0"
+      ]
+    },
+    "227": {
+      "op": "dup",
+      "defined_out": [
+        "question#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "228": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)",
+        "0"
+      ]
+    },
+    "229": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%1#0",
+        "question#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0",
+        "aggregate%array_length%1#0"
+      ]
+    },
+    "230": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0",
+        "aggregate%array_length%1#0",
+        "2"
+      ]
+    },
+    "231": {
+      "op": "+",
+      "defined_out": [
+        "add%1#0",
+        "question#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0",
+        "add%1#0"
+      ]
+    },
+    "232": {
+      "op": "dig 1",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0",
+        "add%1#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "234": {
+      "op": "len",
+      "defined_out": [
+        "add%1#0",
+        "len%1#0",
+        "question#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0",
+        "add%1#0",
+        "len%1#0"
+      ]
+    },
+    "235": {
+      "op": "==",
+      "defined_out": [
+        "eq%1#0",
+        "question#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0",
+        "eq%1#0"
+      ]
+    },
+    "236": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "tmp%2#0"
+      ]
+    },
+    "237": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "opt1#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0"
+      ]
+    },
+    "240": {
+      "op": "txna ApplicationArgs 3",
+      "defined_out": [
+        "opt1#0",
+        "question#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0"
+      ]
+    },
+    "243": {
+      "op": "dup",
+      "defined_out": [
+        "opt1#0",
+        "question#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "244": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0",
+        "tmp%4#0 (copy)",
+        "0"
+      ]
+    },
+    "245": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%2#0",
+        "opt1#0",
+        "question#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0",
+        "aggregate%array_length%2#0"
+      ]
+    },
+    "246": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0",
+        "aggregate%array_length%2#0",
+        "2"
+      ]
+    },
+    "247": {
+      "op": "+",
+      "defined_out": [
+        "add%2#0",
+        "opt1#0",
+        "question#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0",
+        "add%2#0"
+      ]
+    },
+    "248": {
+      "op": "dig 1",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0",
+        "add%2#0",
+        "tmp%4#0 (copy)"
+      ]
+    },
+    "250": {
+      "op": "len",
+      "defined_out": [
+        "add%2#0",
+        "len%2#0",
+        "opt1#0",
+        "question#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0",
+        "add%2#0",
+        "len%2#0"
+      ]
+    },
+    "251": {
+      "op": "==",
+      "defined_out": [
+        "eq%2#0",
+        "opt1#0",
+        "question#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0",
+        "eq%2#0"
+      ]
+    },
+    "252": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "tmp%4#0"
+      ]
+    },
+    "253": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0"
+      ]
+    },
+    "256": {
+      "op": "txna ApplicationArgs 4",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "question#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0"
+      ]
+    },
+    "259": {
+      "op": "dup",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "question#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "260": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0",
+        "tmp%6#0 (copy)",
+        "0"
+      ]
+    },
+    "261": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%3#0",
+        "opt1#0",
+        "opt2#0",
+        "question#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0",
+        "aggregate%array_length%3#0"
+      ]
+    },
+    "262": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0",
+        "aggregate%array_length%3#0",
+        "2"
+      ]
+    },
+    "263": {
+      "op": "+",
+      "defined_out": [
+        "add%3#0",
+        "opt1#0",
+        "opt2#0",
+        "question#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0",
+        "add%3#0"
+      ]
+    },
+    "264": {
+      "op": "dig 1",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0",
+        "add%3#0",
+        "tmp%6#0 (copy)"
+      ]
+    },
+    "266": {
+      "op": "len",
+      "defined_out": [
+        "add%3#0",
+        "len%3#0",
+        "opt1#0",
+        "opt2#0",
+        "question#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0",
+        "add%3#0",
+        "len%3#0"
+      ]
+    },
+    "267": {
+      "op": "==",
+      "defined_out": [
+        "eq%3#0",
+        "opt1#0",
+        "opt2#0",
+        "question#0",
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0",
+        "eq%3#0"
+      ]
+    },
+    "268": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "tmp%6#0"
+      ]
+    },
+    "269": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0"
+      ]
+    },
+    "272": {
+      "op": "txna ApplicationArgs 5",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0"
+      ]
+    },
+    "275": {
+      "op": "dup",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "276": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0",
+        "tmp%8#0 (copy)",
+        "0"
+      ]
+    },
+    "277": {
+      "error": "invalid array length header",
+      "op": "extract_uint16 // on error: invalid array length header",
+      "defined_out": [
+        "aggregate%array_length%4#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0",
+        "aggregate%array_length%4#0"
+      ]
+    },
+    "278": {
+      "op": "intc_2 // 2",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0",
+        "aggregate%array_length%4#0",
+        "2"
+      ]
+    },
+    "279": {
+      "op": "+",
+      "defined_out": [
+        "add%4#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0",
+        "add%4#0"
+      ]
+    },
+    "280": {
+      "op": "dig 1",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0",
+        "add%4#0",
+        "tmp%8#0 (copy)"
+      ]
+    },
+    "282": {
+      "op": "len",
+      "defined_out": [
+        "add%4#0",
+        "len%4#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0",
+        "add%4#0",
+        "len%4#0"
+      ]
+    },
+    "283": {
+      "op": "==",
+      "defined_out": [
+        "eq%4#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0",
+        "eq%4#0"
+      ]
+    },
+    "284": {
+      "error": "invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "op": "assert // invalid number of bytes for arc4.dynamic_array<arc4.uint8>",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "tmp%8#0"
+      ]
+    },
+    "285": {
+      "op": "extract 2 0",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0"
+      ]
+    },
+    "288": {
+      "op": "txna ApplicationArgs 6",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "tmp%10#0"
+      ]
+    },
+    "291": {
+      "op": "dup",
+      "defined_out": [
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%10#0",
+        "tmp%10#0 (copy)"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "tmp%10#0",
+        "tmp%10#0 (copy)"
+      ]
+    },
+    "292": {
+      "op": "len",
+      "defined_out": [
+        "len%5#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "tmp%10#0",
+        "len%5#0"
+      ]
+    },
+    "293": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "len%5#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "tmp%10#0",
+        "len%5#0",
+        "8"
+      ]
+    },
+    "294": {
+      "op": "==",
+      "defined_out": [
+        "eq%5#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "tmp%10#0",
+        "eq%5#0"
+      ]
+    },
+    "295": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "tmp%10#0"
+      ]
+    },
+    "296": {
+      "op": "btoi",
+      "defined_out": [
+        "durationSeconds#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0"
+      ]
+    },
+    "297": {
+      "op": "txna ApplicationArgs 7",
+      "defined_out": [
+        "durationSeconds#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tmp%12#0"
+      ]
+    },
+    "300": {
+      "op": "dup",
+      "defined_out": [
+        "durationSeconds#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%12#0",
+        "tmp%12#0 (copy)"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tmp%12#0",
+        "tmp%12#0 (copy)"
+      ]
+    },
+    "301": {
+      "op": "len",
+      "defined_out": [
+        "durationSeconds#0",
+        "len%6#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tmp%12#0",
+        "len%6#0"
+      ]
+    },
+    "302": {
+      "op": "intc_3 // 8",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tmp%12#0",
+        "len%6#0",
+        "8"
+      ]
+    },
+    "303": {
+      "op": "==",
+      "defined_out": [
+        "durationSeconds#0",
+        "eq%6#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tmp%12#0",
+        "eq%6#0"
+      ]
+    },
+    "304": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tmp%12#0"
+      ]
+    },
+    "305": {
+      "op": "btoi",
+      "defined_out": [
+        "durationSeconds#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tokenId#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "306": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "0"
+      ]
+    },
+    "307": {
+      "op": "bytec_2 // \"active\"",
+      "defined_out": [
+        "\"active\"",
+        "0",
+        "durationSeconds#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tokenId#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "0",
+        "\"active\""
+      ]
+    },
+    "308": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "_%0#0",
+        "durationSeconds#0",
+        "maybe_exists%0#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tokenId#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "_%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "309": {
+      "op": "bury 1",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "311": {
+      "op": "bz createPoll_after_if_else@3",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "314": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "0"
+      ]
+    },
+    "315": {
+      "op": "bytec_2 // \"active\"",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "0",
+        "\"active\""
+      ]
+    },
+    "316": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "durationSeconds#0",
+        "maybe_exists%1#0",
+        "maybe_value%0#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tokenId#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "maybe_value%0#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "317": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "318": {
+      "op": "!",
+      "defined_out": [
+        "durationSeconds#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%0#1",
+        "tokenId#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "tmp%0#1"
+      ]
+    },
+    "319": {
+      "error": "Poll already active",
+      "op": "assert // Poll already active",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "320": {
+      "block": "createPoll_after_if_else@3",
+      "stack_in": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ],
+      "op": "bytec 10 // \"question\"",
+      "defined_out": [
+        "\"question\""
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"question\""
+      ]
+    },
+    "322": {
+      "op": "dig 7",
+      "defined_out": [
+        "\"question\"",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"question\"",
+        "question#0"
+      ]
+    },
+    "324": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "325": {
+      "op": "bytec 11 // \"opt1\"",
+      "defined_out": [
+        "\"opt1\"",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"opt1\""
+      ]
+    },
+    "327": {
+      "op": "dig 6",
+      "defined_out": [
+        "\"opt1\"",
+        "opt1#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"opt1\"",
+        "opt1#0"
+      ]
+    },
+    "329": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "330": {
+      "op": "bytec 12 // \"opt2\"",
+      "defined_out": [
+        "\"opt2\"",
+        "opt1#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"opt2\""
+      ]
+    },
+    "332": {
+      "op": "dig 5",
+      "defined_out": [
+        "\"opt2\"",
+        "opt1#0",
+        "opt2#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"opt2\"",
+        "opt2#0"
+      ]
+    },
+    "334": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "335": {
+      "op": "bytec 13 // \"opt3\"",
+      "defined_out": [
+        "\"opt3\"",
+        "opt1#0",
+        "opt2#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"opt3\""
+      ]
+    },
+    "337": {
+      "op": "dig 4",
+      "defined_out": [
+        "\"opt3\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"opt3\"",
+        "opt3#0"
+      ]
+    },
+    "339": {
+      "op": "dup",
+      "defined_out": [
+        "\"opt3\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt3#0 (copy)",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"opt3\"",
+        "opt3#0 (copy)",
+        "opt3#0 (copy)"
+      ]
+    },
+    "340": {
+      "op": "cover 2",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"opt3\"",
+        "opt3#0 (copy)"
+      ]
+    },
+    "342": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0"
+      ]
+    },
+    "343": {
+      "op": "bytec 14 // \"opt4\"",
+      "defined_out": [
+        "\"opt4\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"opt4\""
+      ]
+    },
+    "345": {
+      "op": "dig 4",
+      "defined_out": [
+        "\"opt4\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"opt4\"",
+        "opt4#0"
+      ]
+    },
+    "347": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0"
+      ]
+    },
+    "348": {
+      "op": "bytec 4 // \"v1\"",
+      "defined_out": [
+        "\"v1\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"v1\""
+      ]
+    },
+    "350": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "\"v1\"",
+        "0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"v1\"",
+        "0"
+      ]
+    },
+    "351": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0"
+      ]
+    },
+    "352": {
+      "op": "bytec 5 // \"v2\"",
+      "defined_out": [
+        "\"v2\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"v2\""
+      ]
+    },
+    "354": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"v2\"",
+        "0"
+      ]
+    },
+    "355": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0"
+      ]
+    },
+    "356": {
+      "op": "bytec 6 // \"v3\"",
+      "defined_out": [
+        "\"v3\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"v3\""
+      ]
+    },
+    "358": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"v3\"",
+        "0"
+      ]
+    },
+    "359": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0"
+      ]
+    },
+    "360": {
+      "op": "bytec 7 // \"v4\"",
+      "defined_out": [
+        "\"v4\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"v4\""
+      ]
+    },
+    "362": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"v4\"",
+        "0"
+      ]
+    },
+    "363": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0"
+      ]
+    },
+    "364": {
+      "op": "bytec 8 // \"total\"",
+      "defined_out": [
+        "\"total\"",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"total\""
+      ]
+    },
+    "366": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "\"total\"",
+        "0"
+      ]
+    },
+    "367": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0"
+      ]
+    },
+    "368": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "count#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0",
+        "count#0"
+      ]
+    },
+    "369": {
+      "op": "bury 9",
+      "defined_out": [
+        "count#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt3#0"
+      ]
+    },
+    "371": {
+      "op": "len",
+      "defined_out": [
+        "count#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "question#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "tmp%1#1"
+      ]
+    },
+    "372": {
+      "op": "bz createPoll_after_if_else@5",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "375": {
+      "op": "pushint 3 // 3",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "count#0"
+      ]
+    },
+    "377": {
+      "op": "bury 8",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "379": {
+      "block": "createPoll_after_if_else@5",
+      "stack_in": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ],
+      "op": "dig 2",
+      "defined_out": [
+        "opt4#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "opt4#0"
+      ]
+    },
+    "381": {
+      "op": "len",
+      "defined_out": [
+        "opt4#0",
+        "tmp%3#1"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "tmp%3#1"
+      ]
+    },
+    "382": {
+      "op": "bz createPoll_after_if_else@7",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "385": {
+      "op": "pushint 4 // 4",
+      "defined_out": [
+        "count#0",
+        "opt4#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "count#0"
+      ]
+    },
+    "387": {
+      "op": "bury 8",
+      "defined_out": [
+        "count#0",
+        "opt4#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "389": {
+      "block": "createPoll_after_if_else@7",
+      "stack_in": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ],
+      "op": "bytec 9 // \"optCount\"",
+      "defined_out": [
+        "\"optCount\""
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"optCount\""
+      ]
+    },
+    "391": {
+      "op": "dig 8",
+      "defined_out": [
+        "\"optCount\"",
+        "count#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"optCount\"",
+        "count#0"
+      ]
+    },
+    "393": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "394": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "count#0",
+        "tmp%5#1"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "tmp%5#1"
+      ]
+    },
+    "396": {
+      "op": "dig 2",
+      "defined_out": [
+        "count#0",
+        "durationSeconds#0",
+        "tmp%5#1"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "tmp%5#1",
+        "durationSeconds#0"
+      ]
+    },
+    "398": {
+      "op": "+",
+      "defined_out": [
+        "count#0",
+        "durationSeconds#0",
+        "tmp%6#1"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "tmp%6#1"
+      ]
+    },
+    "399": {
+      "op": "bytec_3 // \"endTime\"",
+      "defined_out": [
+        "\"endTime\"",
+        "count#0",
+        "durationSeconds#0",
+        "tmp%6#1"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "tmp%6#1",
+        "\"endTime\""
+      ]
+    },
+    "400": {
+      "op": "swap",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"endTime\"",
+        "tmp%6#1"
+      ]
+    },
+    "401": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "402": {
+      "op": "bytec 15 // \"creator\"",
+      "defined_out": [
+        "\"creator\"",
+        "count#0",
+        "durationSeconds#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"creator\""
+      ]
+    },
+    "404": {
+      "op": "txn Sender",
+      "defined_out": [
+        "\"creator\"",
+        "count#0",
+        "durationSeconds#0",
+        "reinterpret_bytes[32]%0#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"creator\"",
+        "reinterpret_bytes[32]%0#0"
+      ]
+    },
+    "406": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "407": {
+      "op": "bytec_2 // \"active\"",
+      "defined_out": [
+        "\"active\"",
+        "count#0",
+        "durationSeconds#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"active\""
+      ]
+    },
+    "408": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "\"active\"",
+        "1",
+        "count#0",
+        "durationSeconds#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"active\"",
+        "1"
+      ]
+    },
+    "409": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "410": {
+      "op": "pushbytes \"tokenId\"",
+      "defined_out": [
+        "\"tokenId\"",
+        "count#0",
+        "durationSeconds#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"tokenId\""
+      ]
+    },
+    "419": {
+      "op": "dig 1",
+      "defined_out": [
+        "\"tokenId\"",
+        "count#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ],
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "\"tokenId\"",
+        "tokenId#0"
+      ]
+    },
+    "421": {
+      "op": "app_global_put",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "422": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0",
+        "1"
+      ]
+    },
+    "423": {
+      "op": "return",
+      "stack_out": [
+        "count#0",
+        "question#0",
+        "opt1#0",
+        "opt2#0",
+        "opt3#0",
+        "opt4#0",
+        "durationSeconds#0",
+        "tokenId#0"
+      ]
+    },
+    "424": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.vote[routing]",
+      "params": {},
+      "block": "vote",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "427": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "428": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0"
+      ]
+    },
+    "429": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "430": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "431": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "432": {
+      "op": "btoi",
+      "defined_out": [
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "433": {
+      "op": "dup",
+      "defined_out": [
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0"
+      ]
+    },
+    "434": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "0"
+      ]
+    },
+    "435": {
+      "op": "bytec_2 // \"active\"",
+      "defined_out": [
+        "\"active\"",
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "0",
+        "\"active\""
+      ]
+    },
+    "436": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "437": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "438": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%0#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "439": {
+      "op": "==",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "tmp%0#1"
+      ]
+    },
+    "440": {
+      "error": "Poll is not active",
+      "op": "assert // Poll is not active",
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0"
+      ]
+    },
+    "441": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "tmp%1#1"
+      ]
+    },
+    "443": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "tmp%1#1",
+        "0"
+      ]
+    },
+    "444": {
+      "op": "bytec_3 // \"endTime\"",
+      "defined_out": [
+        "\"endTime\"",
+        "0",
+        "optionIndex#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "tmp%1#1",
+        "0",
+        "\"endTime\""
+      ]
+    },
+    "445": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "optionIndex#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "tmp%1#1",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "446": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "tmp%1#1",
+        "maybe_value%1#0"
+      ]
+    },
+    "447": {
+      "op": "<",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "tmp%2#0"
+      ]
+    },
+    "448": {
+      "error": "Poll has ended",
+      "op": "assert // Poll has ended",
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0"
+      ]
+    },
+    "449": {
+      "op": "bz vote_bool_false@4",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "452": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "optionIndex#0",
+        "0"
+      ]
+    },
+    "453": {
+      "op": "bytec 9 // \"optCount\"",
+      "defined_out": [
+        "\"optCount\"",
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0",
+        "\"optCount\""
+      ]
+    },
+    "455": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%2#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "456": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "457": {
+      "op": "dig 1",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%2#0",
+        "optionIndex#0"
+      ]
+    },
+    "459": {
+      "op": ">=",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%4#0"
+      ]
+    },
+    "460": {
+      "op": "bz vote_bool_false@4",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "463": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "and_result%0#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "and_result%0#0"
+      ]
+    },
+    "464": {
+      "error": "Invalid option",
+      "block": "vote_bool_merge@5",
+      "stack_in": [
+        "optionIndex#0",
+        "and_result%0#0"
+      ],
+      "op": "assert // Invalid option",
+      "defined_out": [],
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "465": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%5#0"
+      ]
+    },
+    "467": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%5#0",
+        "0"
+      ]
+    },
+    "468": {
+      "op": "bytec_0 // \"voted\"",
+      "defined_out": [
+        "\"voted\"",
+        "0",
+        "tmp%5#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%5#0",
+        "0",
+        "\"voted\""
+      ]
+    },
+    "469": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "_%0#0",
+        "maybe_exists%3#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "_%0#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "470": {
+      "op": "bury 1",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "472": {
+      "op": "bz vote_after_if_else@7",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "475": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%6#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%6#0"
+      ]
+    },
+    "477": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%6#0",
+        "0"
+      ]
+    },
+    "478": {
+      "op": "bytec_0 // \"voted\"",
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%6#0",
+        "0",
+        "\"voted\""
+      ]
+    },
+    "479": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%3#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "480": {
+      "error": "check LocalState exists",
+      "op": "assert // check LocalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "481": {
+      "op": "!",
+      "defined_out": [
+        "tmp%7#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%7#0"
+      ]
+    },
+    "482": {
+      "error": "Already voted",
+      "op": "assert // Already voted",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "483": {
+      "block": "vote_after_if_else@7",
+      "stack_in": [
+        "optionIndex#0"
+      ],
+      "op": "dup",
+      "defined_out": [
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0"
+      ]
+    },
+    "484": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "1"
+      ]
+    },
+    "485": {
+      "op": "==",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%8#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%8#0"
+      ]
+    },
+    "486": {
+      "op": "bz vote_else_body@9",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "489": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0"
+      ]
+    },
+    "490": {
+      "op": "bytec 4 // \"v1\"",
+      "defined_out": [
+        "\"v1\"",
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0",
+        "\"v1\""
+      ]
+    },
+    "492": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%4#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%4#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "493": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "494": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%4#0",
+        "1"
+      ]
+    },
+    "495": {
+      "op": "+",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%9#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%9#0"
+      ]
+    },
+    "496": {
+      "op": "bytec 4 // \"v1\"",
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%9#0",
+        "\"v1\""
+      ]
+    },
+    "498": {
+      "op": "swap",
+      "stack_out": [
+        "optionIndex#0",
+        "\"v1\"",
+        "tmp%9#0"
+      ]
+    },
+    "499": {
+      "op": "app_global_put",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "500": {
+      "block": "vote_after_if_else@18",
+      "stack_in": [
+        "optionIndex#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0"
+      ]
+    },
+    "501": {
+      "op": "bytec 8 // \"total\"",
+      "defined_out": [
+        "\"total\"",
+        "0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0",
+        "\"total\""
+      ]
+    },
+    "503": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%9#0",
+        "maybe_value%8#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%8#0",
+        "maybe_exists%9#0"
+      ]
+    },
+    "504": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%8#0"
+      ]
+    },
+    "505": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%8#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%8#0",
+        "1"
+      ]
+    },
+    "506": {
+      "op": "+",
+      "defined_out": [
+        "tmp%16#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%16#0"
+      ]
+    },
+    "507": {
+      "op": "bytec 8 // \"total\"",
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%16#0",
+        "\"total\""
+      ]
+    },
+    "509": {
+      "op": "swap",
+      "stack_out": [
+        "optionIndex#0",
+        "\"total\"",
+        "tmp%16#0"
+      ]
+    },
+    "510": {
+      "op": "app_global_put",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "511": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%17#0"
+      ]
+    },
+    "513": {
+      "op": "bytec_0 // \"voted\"",
+      "defined_out": [
+        "\"voted\"",
+        "tmp%17#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%17#0",
+        "\"voted\""
+      ]
+    },
+    "514": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%17#0",
+        "\"voted\"",
+        "1"
+      ]
+    },
+    "515": {
+      "op": "app_local_put",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "516": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%18#0"
+      ]
+    },
+    "518": {
+      "op": "bytec 16 // \"choice\"",
+      "defined_out": [
+        "\"choice\"",
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%18#0",
+        "\"choice\""
+      ]
+    },
+    "520": {
+      "op": "dig 2",
+      "defined_out": [
+        "\"choice\"",
+        "optionIndex#0",
+        "tmp%18#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%18#0",
+        "\"choice\"",
+        "optionIndex#0"
+      ]
+    },
+    "522": {
+      "op": "app_local_put",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "523": {
+      "op": "intc_1 // 1",
+      "stack_out": [
+        "optionIndex#0",
+        "1"
+      ]
+    },
+    "524": {
+      "op": "return",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "525": {
+      "block": "vote_else_body@9",
+      "stack_in": [
+        "optionIndex#0"
+      ],
+      "op": "dup",
+      "defined_out": [
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0"
+      ]
+    },
+    "526": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "2"
+      ]
+    },
+    "527": {
+      "op": "==",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%10#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%10#0"
+      ]
+    },
+    "528": {
+      "op": "bz vote_else_body@11",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "531": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0"
+      ]
+    },
+    "532": {
+      "op": "bytec 5 // \"v2\"",
+      "defined_out": [
+        "\"v2\"",
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0",
+        "\"v2\""
+      ]
+    },
+    "534": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%6#0",
+        "maybe_value%5#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%5#0",
+        "maybe_exists%6#0"
+      ]
+    },
+    "535": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "536": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%5#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%5#0",
+        "1"
+      ]
+    },
+    "537": {
+      "op": "+",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%11#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%11#0"
+      ]
+    },
+    "538": {
+      "op": "bytec 5 // \"v2\"",
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%11#0",
+        "\"v2\""
+      ]
+    },
+    "540": {
+      "op": "swap",
+      "stack_out": [
+        "optionIndex#0",
+        "\"v2\"",
+        "tmp%11#0"
+      ]
+    },
+    "541": {
+      "op": "app_global_put",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "542": {
+      "op": "b vote_after_if_else@18"
+    },
+    "545": {
+      "block": "vote_else_body@11",
+      "stack_in": [
+        "optionIndex#0"
+      ],
+      "op": "dup",
+      "defined_out": [
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0"
+      ]
+    },
+    "546": {
+      "op": "pushint 3 // 3",
+      "defined_out": [
+        "3",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "3"
+      ]
+    },
+    "548": {
+      "op": "==",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%12#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%12#0"
+      ]
+    },
+    "549": {
+      "op": "bz vote_else_body@13",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "552": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0"
+      ]
+    },
+    "553": {
+      "op": "bytec 6 // \"v3\"",
+      "defined_out": [
+        "\"v3\"",
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0",
+        "\"v3\""
+      ]
+    },
+    "555": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%7#0",
+        "maybe_value%6#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%6#0",
+        "maybe_exists%7#0"
+      ]
+    },
+    "556": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%6#0"
+      ]
+    },
+    "557": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%6#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%6#0",
+        "1"
+      ]
+    },
+    "558": {
+      "op": "+",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%13#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%13#0"
+      ]
+    },
+    "559": {
+      "op": "bytec 6 // \"v3\"",
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%13#0",
+        "\"v3\""
+      ]
+    },
+    "561": {
+      "op": "swap",
+      "stack_out": [
+        "optionIndex#0",
+        "\"v3\"",
+        "tmp%13#0"
+      ]
+    },
+    "562": {
+      "op": "app_global_put",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "563": {
+      "op": "b vote_after_if_else@18"
+    },
+    "566": {
+      "block": "vote_else_body@13",
+      "stack_in": [
+        "optionIndex#0"
+      ],
+      "op": "dup",
+      "defined_out": [
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0"
+      ]
+    },
+    "567": {
+      "op": "pushint 4 // 4",
+      "defined_out": [
+        "4",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "optionIndex#0",
+        "4"
+      ]
+    },
+    "569": {
+      "op": "==",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%14#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%14#0"
+      ]
+    },
+    "570": {
+      "op": "bz vote_after_if_else@18",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "573": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0"
+      ]
+    },
+    "574": {
+      "op": "bytec 7 // \"v4\"",
+      "defined_out": [
+        "\"v4\"",
+        "0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "0",
+        "\"v4\""
+      ]
+    },
+    "576": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%8#0",
+        "maybe_value%7#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%7#0",
+        "maybe_exists%8#0"
+      ]
+    },
+    "577": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%7#0"
+      ]
+    },
+    "578": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%7#0",
+        "optionIndex#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "maybe_value%7#0",
+        "1"
+      ]
+    },
+    "579": {
+      "op": "+",
+      "defined_out": [
+        "optionIndex#0",
+        "tmp%15#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%15#0"
+      ]
+    },
+    "580": {
+      "op": "bytec 7 // \"v4\"",
+      "stack_out": [
+        "optionIndex#0",
+        "tmp%15#0",
+        "\"v4\""
+      ]
+    },
+    "582": {
+      "op": "swap",
+      "stack_out": [
+        "optionIndex#0",
+        "\"v4\"",
+        "tmp%15#0"
+      ]
+    },
+    "583": {
+      "op": "app_global_put",
+      "stack_out": [
+        "optionIndex#0"
+      ]
+    },
+    "584": {
+      "op": "b vote_after_if_else@18"
+    },
+    "587": {
+      "block": "vote_bool_false@4",
+      "stack_in": [
+        "optionIndex#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "and_result%0#0"
+      ],
+      "stack_out": [
+        "optionIndex#0",
+        "and_result%0#0"
+      ]
+    },
+    "588": {
+      "op": "b vote_bool_merge@5"
+    },
+    "591": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.getResults[routing]",
+      "params": {},
+      "block": "getResults",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "592": {
+      "op": "bytec 4 // \"v1\"",
+      "defined_out": [
+        "\"v1\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"v1\""
+      ]
+    },
+    "594": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "595": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "596": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "maybe_value%0#0",
+        "0"
+      ]
+    },
+    "597": {
+      "op": "bytec 5 // \"v2\"",
+      "defined_out": [
+        "\"v2\"",
+        "0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "0",
+        "\"v2\""
+      ]
+    },
+    "599": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%0#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "600": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "601": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "0"
+      ]
+    },
+    "602": {
+      "op": "bytec 6 // \"v3\"",
+      "defined_out": [
+        "\"v3\"",
+        "0",
+        "maybe_value%0#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "0",
+        "\"v3\""
+      ]
+    },
+    "604": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "605": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "606": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "0"
+      ]
+    },
+    "607": {
+      "op": "bytec 7 // \"v4\"",
+      "defined_out": [
+        "\"v4\"",
+        "0",
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "0",
+        "\"v4\""
+      ]
+    },
+    "609": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "610": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "611": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "0"
+      ]
+    },
+    "612": {
+      "op": "bytec 8 // \"total\"",
+      "defined_out": [
+        "\"total\"",
+        "0",
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "0",
+        "\"total\""
+      ]
+    },
+    "614": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%4#0",
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_exists%4#0"
+      ]
+    },
+    "615": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "616": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "0"
+      ]
+    },
+    "617": {
+      "op": "bytec 9 // \"optCount\"",
+      "defined_out": [
+        "\"optCount\"",
+        "0",
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "0",
+        "\"optCount\""
+      ]
+    },
+    "619": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%5#0",
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "maybe_exists%5#0"
+      ]
+    },
+    "620": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "621": {
+      "op": "uncover 5",
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "623": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "624": {
+      "op": "pushbytes 0x0006",
+      "defined_out": [
+        "0x0006",
+        "aggregate%val_as_bytes%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%val_as_bytes%0#0",
+        "0x0006"
+      ]
+    },
+    "628": {
+      "op": "swap",
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "0x0006",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "629": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%0#0",
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%0#0"
+      ]
+    },
+    "630": {
+      "op": "uncover 5",
+      "stack_out": [
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%0#0",
+        "maybe_value%1#0"
+      ]
+    },
+    "632": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%head%0#0",
+        "aggregate%val_as_bytes%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%0#0",
+        "aggregate%val_as_bytes%1#0"
+      ]
+    },
+    "633": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%1#0",
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%1#0"
+      ]
+    },
+    "634": {
+      "op": "uncover 4",
+      "stack_out": [
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%1#0",
+        "maybe_value%2#0"
+      ]
+    },
+    "636": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%head%1#0",
+        "aggregate%val_as_bytes%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%1#0",
+        "aggregate%val_as_bytes%2#0"
+      ]
+    },
+    "637": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%2#0",
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%2#0"
+      ]
+    },
+    "638": {
+      "op": "uncover 3",
+      "stack_out": [
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%2#0",
+        "maybe_value%3#0"
+      ]
+    },
+    "640": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%head%2#0",
+        "aggregate%val_as_bytes%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%2#0",
+        "aggregate%val_as_bytes%3#0"
+      ]
+    },
+    "641": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%3#0",
+        "maybe_value%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%4#0",
+        "maybe_value%5#0",
+        "aggregate%head%3#0"
+      ]
+    },
+    "642": {
+      "op": "uncover 2",
+      "stack_out": [
+        "maybe_value%5#0",
+        "aggregate%head%3#0",
+        "maybe_value%4#0"
+      ]
+    },
+    "644": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%head%3#0",
+        "aggregate%val_as_bytes%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%5#0",
+        "aggregate%head%3#0",
+        "aggregate%val_as_bytes%4#0"
+      ]
+    },
+    "645": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%4#0",
+        "maybe_value%5#0"
+      ],
+      "stack_out": [
+        "maybe_value%5#0",
+        "aggregate%head%4#0"
+      ]
+    },
+    "646": {
+      "op": "swap",
+      "stack_out": [
+        "aggregate%head%4#0",
+        "maybe_value%5#0"
+      ]
+    },
+    "647": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%head%4#0",
+        "aggregate%val_as_bytes%5#0"
+      ],
+      "stack_out": [
+        "aggregate%head%4#0",
+        "aggregate%val_as_bytes%5#0"
+      ]
+    },
+    "648": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%head%5#0"
+      ],
+      "stack_out": [
+        "aggregate%head%5#0"
+      ]
+    },
+    "649": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%head%5#0"
+      ],
+      "stack_out": [
+        "aggregate%head%5#0",
+        "0x151f7c75"
+      ]
+    },
+    "650": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%head%5#0"
+      ]
+    },
+    "651": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%1#0"
+      ],
+      "stack_out": [
+        "tmp%1#0"
+      ]
+    },
+    "652": {
+      "op": "log",
+      "stack_out": []
+    },
+    "653": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "654": {
+      "op": "return",
+      "stack_out": []
+    },
+    "655": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.getPollQuestion[routing]",
+      "params": {},
+      "block": "getPollQuestion",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "656": {
+      "op": "bytec 10 // \"question\"",
+      "defined_out": [
+        "\"question\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"question\""
+      ]
+    },
+    "658": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "659": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "660": {
+      "op": "dup",
+      "defined_out": [
+        "maybe_value%0#0",
+        "maybe_value%0#0 (copy)"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_value%0#0 (copy)"
+      ]
+    },
+    "661": {
+      "op": "len",
+      "defined_out": [
+        "aggregate%length%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "aggregate%length%0#0"
+      ]
+    },
+    "662": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_bytes%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "aggregate%as_bytes%0#0"
+      ]
+    },
+    "663": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "aggregate%length_uint16%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "aggregate%length_uint16%0#0"
+      ]
+    },
+    "666": {
+      "op": "swap",
+      "stack_out": [
+        "aggregate%length_uint16%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "667": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "668": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "aggregate%encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "669": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "670": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "671": {
+      "op": "log",
+      "stack_out": []
+    },
+    "672": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "673": {
+      "op": "return",
+      "stack_out": []
+    },
+    "674": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.getOption[routing]",
+      "params": {},
+      "block": "getOption",
+      "stack_in": [],
+      "op": "txna ApplicationArgs 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "677": {
+      "op": "dup",
+      "defined_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "tmp%0#0 (copy)"
+      ]
+    },
+    "678": {
+      "op": "len",
+      "defined_out": [
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0"
+      ]
+    },
+    "679": {
+      "op": "intc_3 // 8",
+      "defined_out": [
+        "8",
+        "len%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "len%0#0",
+        "8"
+      ]
+    },
+    "680": {
+      "op": "==",
+      "defined_out": [
+        "eq%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "eq%0#0"
+      ]
+    },
+    "681": {
+      "error": "invalid number of bytes for arc4.uint64",
+      "op": "assert // invalid number of bytes for arc4.uint64",
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "682": {
+      "op": "btoi",
+      "defined_out": [
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0"
+      ]
+    },
+    "683": {
+      "op": "dup",
+      "defined_out": [
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "index#0"
+      ]
+    },
+    "684": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "index#0",
+        "1"
+      ]
+    },
+    "685": {
+      "op": "==",
+      "defined_out": [
+        "index#0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%0#1"
+      ]
+    },
+    "686": {
+      "op": "bz getOption_after_if_else@3",
+      "stack_out": [
+        "index#0"
+      ]
+    },
+    "689": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "index#0",
+        "0"
+      ]
+    },
+    "690": {
+      "op": "bytec 11 // \"opt1\"",
+      "defined_out": [
+        "\"opt1\"",
+        "0",
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "0",
+        "\"opt1\""
+      ]
+    },
+    "692": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "index#0",
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "693": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "defined_out": [
+        "index#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#0"
+      ]
+    },
+    "694": {
+      "block": "getOption_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.getOption@8",
+      "stack_in": [
+        "index#0",
+        "tmp%2#0"
+      ],
+      "op": "dup",
+      "defined_out": [
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#0",
+        "tmp%2#0 (copy)"
+      ]
+    },
+    "695": {
+      "op": "len",
+      "defined_out": [
+        "aggregate%length%0#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#0",
+        "aggregate%length%0#0"
+      ]
+    },
+    "696": {
+      "op": "itob",
+      "defined_out": [
+        "aggregate%as_bytes%0#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#0",
+        "aggregate%as_bytes%0#0"
+      ]
+    },
+    "697": {
+      "op": "extract 6 2",
+      "defined_out": [
+        "aggregate%length_uint16%0#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#0",
+        "aggregate%length_uint16%0#0"
+      ]
+    },
+    "700": {
+      "op": "swap",
+      "stack_out": [
+        "index#0",
+        "aggregate%length_uint16%0#0",
+        "tmp%2#0"
+      ]
+    },
+    "701": {
+      "op": "concat",
+      "defined_out": [
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "702": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "aggregate%encoded_value%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "703": {
+      "op": "swap",
+      "stack_out": [
+        "index#0",
+        "0x151f7c75",
+        "aggregate%encoded_value%0#0"
+      ]
+    },
+    "704": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%4#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%4#0"
+      ]
+    },
+    "705": {
+      "op": "log",
+      "stack_out": [
+        "index#0"
+      ]
+    },
+    "706": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "index#0",
+        "1"
+      ]
+    },
+    "707": {
+      "op": "return",
+      "stack_out": [
+        "index#0"
+      ]
+    },
+    "708": {
+      "block": "getOption_after_if_else@3",
+      "stack_in": [
+        "index#0"
+      ],
+      "op": "dup",
+      "defined_out": [
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "index#0"
+      ]
+    },
+    "709": {
+      "op": "intc_2 // 2",
+      "defined_out": [
+        "2",
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "index#0",
+        "2"
+      ]
+    },
+    "710": {
+      "op": "==",
+      "defined_out": [
+        "index#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%1#1"
+      ]
+    },
+    "711": {
+      "op": "bz getOption_after_if_else@5",
+      "stack_out": [
+        "index#0"
+      ]
+    },
+    "714": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "0"
+      ]
+    },
+    "715": {
+      "op": "bytec 12 // \"opt2\"",
+      "defined_out": [
+        "\"opt2\"",
+        "0",
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "0",
+        "\"opt2\""
+      ]
+    },
+    "717": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "index#0",
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "718": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "defined_out": [
+        "index#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#0"
+      ]
+    },
+    "719": {
+      "op": "b getOption_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.getOption@8"
+    },
+    "722": {
+      "block": "getOption_after_if_else@5",
+      "stack_in": [
+        "index#0"
+      ],
+      "op": "dup",
+      "defined_out": [
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "index#0"
+      ]
+    },
+    "723": {
+      "op": "pushint 3 // 3",
+      "defined_out": [
+        "3",
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "index#0",
+        "3"
+      ]
+    },
+    "725": {
+      "op": "==",
+      "defined_out": [
+        "index#0",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#1"
+      ]
+    },
+    "726": {
+      "op": "bz getOption_after_if_else@7",
+      "stack_out": [
+        "index#0"
+      ]
+    },
+    "729": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "0"
+      ]
+    },
+    "730": {
+      "op": "bytec 13 // \"opt3\"",
+      "defined_out": [
+        "\"opt3\"",
+        "0",
+        "index#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "0",
+        "\"opt3\""
+      ]
+    },
+    "732": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "index#0",
+        "maybe_exists%2#0",
+        "maybe_value%2#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "maybe_value%2#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "733": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "defined_out": [
+        "index#0",
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#0"
+      ]
+    },
+    "734": {
+      "op": "b getOption_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.getOption@8"
+    },
+    "737": {
+      "block": "getOption_after_if_else@7",
+      "stack_in": [
+        "index#0"
+      ],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "index#0",
+        "0"
+      ]
+    },
+    "738": {
+      "op": "bytec 14 // \"opt4\"",
+      "defined_out": [
+        "\"opt4\"",
+        "0"
+      ],
+      "stack_out": [
+        "index#0",
+        "0",
+        "\"opt4\""
+      ]
+    },
+    "740": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%3#0",
+        "maybe_value%3#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "maybe_value%3#0",
+        "maybe_exists%3#0"
+      ]
+    },
+    "741": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "index#0",
+        "tmp%2#0"
+      ]
+    },
+    "742": {
+      "op": "b getOption_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.getOption@8"
+    },
+    "745": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.checkPollActive[routing]",
+      "params": {},
+      "block": "checkPollActive",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "746": {
+      "op": "bytec_2 // \"active\"",
+      "defined_out": [
+        "\"active\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"active\""
+      ]
+    },
+    "747": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "748": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "749": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "750": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "751": {
+      "op": "bz checkPollActive_after_if_else@4",
+      "stack_out": []
+    },
+    "754": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "756": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%1#1",
+        "0"
+      ]
+    },
+    "757": {
+      "op": "bytec_3 // \"endTime\"",
+      "defined_out": [
+        "\"endTime\"",
+        "0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1",
+        "0",
+        "\"endTime\""
+      ]
+    },
+    "758": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0",
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1",
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "759": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "tmp%1#1",
+        "maybe_value%1#0"
+      ]
+    },
+    "760": {
+      "op": "<",
+      "defined_out": [
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "tmp%2#1"
+      ]
+    },
+    "761": {
+      "op": "bz checkPollActive_after_if_else@4",
+      "stack_out": []
+    },
+    "764": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "765": {
+      "block": "checkPollActive_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.checkPollActive@5",
+      "stack_in": [
+        "tmp%0#0"
+      ],
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "766": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "767": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "768": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "769": {
+      "op": "log",
+      "stack_out": []
+    },
+    "770": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "771": {
+      "op": "return",
+      "stack_out": []
+    },
+    "772": {
+      "block": "checkPollActive_after_if_else@4",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "773": {
+      "op": "b checkPollActive_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.checkPollActive@5"
+    },
+    "776": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.getRemainingTime[routing]",
+      "params": {},
+      "block": "getRemainingTime",
+      "stack_in": [],
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "778": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0"
+      ]
+    },
+    "779": {
+      "op": "bytec_3 // \"endTime\"",
+      "defined_out": [
+        "\"endTime\"",
+        "0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "0",
+        "\"endTime\""
+      ]
+    },
+    "780": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "781": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "tmp%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "782": {
+      "op": ">=",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "783": {
+      "op": "bz getRemainingTime_after_if_else@3",
+      "stack_out": []
+    },
+    "786": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "787": {
+      "block": "getRemainingTime_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.getRemainingTime@4",
+      "stack_in": [
+        "tmp%0#0"
+      ],
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "788": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "789": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "790": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "791": {
+      "op": "log",
+      "stack_out": []
+    },
+    "792": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "793": {
+      "op": "return",
+      "stack_out": []
+    },
+    "794": {
+      "block": "getRemainingTime_after_if_else@3",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0"
+      ],
+      "stack_out": [
+        "0"
+      ]
+    },
+    "795": {
+      "op": "bytec_3 // \"endTime\"",
+      "defined_out": [
+        "\"endTime\"",
+        "0"
+      ],
+      "stack_out": [
+        "0",
+        "\"endTime\""
+      ]
+    },
+    "796": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "797": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "maybe_value%1#0"
+      ]
+    },
+    "798": {
+      "op": "global LatestTimestamp",
+      "defined_out": [
+        "maybe_value%1#0",
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "tmp%2#1"
+      ]
+    },
+    "800": {
+      "op": "-",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "801": {
+      "op": "b getRemainingTime_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.getRemainingTime@4"
+    },
+    "804": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.endPoll[routing]",
+      "params": {},
+      "block": "endPoll",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "reinterpret_bytes[32]%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[32]%0#0"
+      ]
+    },
+    "806": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "reinterpret_bytes[32]%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[32]%0#0",
+        "0"
+      ]
+    },
+    "807": {
+      "op": "bytec 15 // \"creator\"",
+      "defined_out": [
+        "\"creator\"",
+        "0",
+        "reinterpret_bytes[32]%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[32]%0#0",
+        "0",
+        "\"creator\""
+      ]
+    },
+    "809": {
+      "op": "app_global_get_ex",
+      "defined_out": [
+        "maybe_exists%0#0",
+        "maybe_value%0#0",
+        "reinterpret_bytes[32]%0#0"
+      ],
+      "stack_out": [
+        "reinterpret_bytes[32]%0#0",
+        "maybe_value%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "810": {
+      "error": "check GlobalState exists",
+      "op": "assert // check GlobalState exists",
+      "stack_out": [
+        "reinterpret_bytes[32]%0#0",
+        "maybe_value%0#0"
+      ]
+    },
+    "811": {
+      "op": "==",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "812": {
+      "error": "Only creator can end poll",
+      "op": "assert // Only creator can end poll",
+      "stack_out": []
+    },
+    "813": {
+      "op": "bytec_2 // \"active\"",
+      "defined_out": [
+        "\"active\""
+      ],
+      "stack_out": [
+        "\"active\""
+      ]
+    },
+    "814": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "\"active\"",
+        "0"
+      ]
+    },
+    "815": {
+      "op": "app_global_put",
+      "stack_out": []
+    },
+    "816": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "817": {
+      "op": "return",
+      "stack_out": []
+    },
+    "818": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.checkHasVoted[routing]",
+      "params": {},
+      "block": "checkHasVoted",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "820": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "821": {
+      "op": "bytec_0 // \"voted\"",
+      "defined_out": [
+        "\"voted\"",
+        "0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "0",
+        "\"voted\""
+      ]
+    },
+    "822": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "_%0#0",
+        "maybe_exists%0#0"
+      ],
+      "stack_out": [
+        "_%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "823": {
+      "op": "bury 1",
+      "stack_out": [
+        "maybe_exists%0#0"
+      ]
+    },
+    "825": {
+      "op": "bz checkHasVoted_after_if_else@3",
+      "stack_out": []
+    },
+    "828": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "830": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%1#1",
+        "0"
+      ]
+    },
+    "831": {
+      "op": "bytec_0 // \"voted\"",
+      "stack_out": [
+        "tmp%1#1",
+        "0",
+        "\"voted\""
+      ]
+    },
+    "832": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "833": {
+      "error": "check LocalState exists",
+      "op": "assert // check LocalState exists",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "834": {
+      "block": "checkHasVoted_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.checkHasVoted@4",
+      "stack_in": [
+        "tmp%0#0"
+      ],
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "835": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "836": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "837": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "838": {
+      "op": "log",
+      "stack_out": []
+    },
+    "839": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "840": {
+      "op": "return",
+      "stack_out": []
+    },
+    "841": {
+      "block": "checkHasVoted_after_if_else@3",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "842": {
+      "op": "b checkHasVoted_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.checkHasVoted@4"
+    },
+    "845": {
+      "subroutine": "smart_contracts/voting/contract.algo.ts::VotingContract.getMyVote[routing]",
+      "params": {},
+      "block": "getMyVote",
+      "stack_in": [],
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1"
+      ]
+    },
+    "847": {
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "0"
+      ]
+    },
+    "848": {
+      "op": "bytec_0 // \"voted\"",
+      "defined_out": [
+        "\"voted\"",
+        "0",
+        "tmp%0#1"
+      ],
+      "stack_out": [
+        "tmp%0#1",
+        "0",
+        "\"voted\""
+      ]
+    },
+    "849": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "_%0#0",
+        "maybe_exists%0#0"
+      ],
+      "stack_out": [
+        "_%0#0",
+        "maybe_exists%0#0"
+      ]
+    },
+    "850": {
+      "op": "bury 1",
+      "stack_out": [
+        "maybe_exists%0#0"
+      ]
+    },
+    "852": {
+      "op": "bz getMyVote_after_if_else@4",
+      "stack_out": []
+    },
+    "855": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%1#1"
+      ],
+      "stack_out": [
+        "tmp%1#1"
+      ]
+    },
+    "857": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%1#1",
+        "0"
+      ]
+    },
+    "858": {
+      "op": "bytec_0 // \"voted\"",
+      "stack_out": [
+        "tmp%1#1",
+        "0",
+        "\"voted\""
+      ]
+    },
+    "859": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%1#0",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "maybe_exists%1#0"
+      ]
+    },
+    "860": {
+      "error": "check LocalState exists",
+      "op": "assert // check LocalState exists",
+      "stack_out": [
+        "maybe_value%0#0"
+      ]
+    },
+    "861": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1",
+        "maybe_value%0#0"
+      ],
+      "stack_out": [
+        "maybe_value%0#0",
+        "1"
+      ]
+    },
+    "862": {
+      "op": "==",
+      "defined_out": [
+        "tmp%2#1"
+      ],
+      "stack_out": [
+        "tmp%2#1"
+      ]
+    },
+    "863": {
+      "op": "bz getMyVote_after_if_else@4",
+      "stack_out": []
+    },
+    "866": {
+      "op": "txn Sender",
+      "defined_out": [
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0"
+      ]
+    },
+    "868": {
+      "op": "intc_0 // 0",
+      "stack_out": [
+        "tmp%3#0",
+        "0"
+      ]
+    },
+    "869": {
+      "op": "bytec 16 // \"choice\"",
+      "defined_out": [
+        "\"choice\"",
+        "0",
+        "tmp%3#0"
+      ],
+      "stack_out": [
+        "tmp%3#0",
+        "0",
+        "\"choice\""
+      ]
+    },
+    "871": {
+      "op": "app_local_get_ex",
+      "defined_out": [
+        "maybe_exists%2#0",
+        "maybe_value%1#0"
+      ],
+      "stack_out": [
+        "maybe_value%1#0",
+        "maybe_exists%2#0"
+      ]
+    },
+    "872": {
+      "error": "check LocalState exists",
+      "op": "assert // check LocalState exists",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "873": {
+      "block": "getMyVote_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.getMyVote@5",
+      "stack_in": [
+        "tmp%0#0"
+      ],
+      "op": "itob",
+      "defined_out": [
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "874": {
+      "op": "bytec_1 // 0x151f7c75",
+      "defined_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ],
+      "stack_out": [
+        "aggregate%val_as_bytes%0#0",
+        "0x151f7c75"
+      ]
+    },
+    "875": {
+      "op": "swap",
+      "stack_out": [
+        "0x151f7c75",
+        "aggregate%val_as_bytes%0#0"
+      ]
+    },
+    "876": {
+      "op": "concat",
+      "defined_out": [
+        "tmp%2#0"
+      ],
+      "stack_out": [
+        "tmp%2#0"
+      ]
+    },
+    "877": {
+      "op": "log",
+      "stack_out": []
+    },
+    "878": {
+      "op": "intc_1 // 1",
+      "defined_out": [
+        "1"
+      ],
+      "stack_out": [
+        "1"
+      ]
+    },
+    "879": {
+      "op": "return",
+      "stack_out": []
+    },
+    "880": {
+      "block": "getMyVote_after_if_else@4",
+      "stack_in": [],
+      "op": "intc_0 // 0",
+      "defined_out": [
+        "tmp%0#0"
+      ],
+      "stack_out": [
+        "tmp%0#0"
+      ]
+    },
+    "881": {
+      "op": "b getMyVote_after_inlined_smart_contracts/voting/contract.algo.ts::VotingContract.getMyVote@5"
+    }
+  }
+}
