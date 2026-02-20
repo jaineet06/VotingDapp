@@ -1,0 +1,229 @@
+/* Notification Component Styles */
+
+.notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.notification-overlay.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.notification {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid;
+  border-radius: 16px;
+  padding: 24px;
+  min-width: 400px;
+  max-width: 600px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  transform: translateY(-20px) scale(0.9);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+  overflow: hidden;
+}
+
+.notification::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--notification-color-1), var(--notification-color-2), var(--notification-color-1));
+  z-index: -1;
+  opacity: 0.3;
+  border-radius: 16px;
+  animation: notification-glow 3s linear infinite;
+}
+
+@keyframes notification-glow {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.notification.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* Notification Types */
+.notification-success {
+  --notification-color-1: #00ff88;
+  --notification-color-2: #00f5ff;
+  border-color: #00ff88;
+}
+
+.notification-error {
+  --notification-color-1: #ff0055;
+  --notification-color-2: #ff00ff;
+  border-color: #ff0055;
+}
+
+.notification-warning {
+  --notification-color-1: #ffaa00;
+  --notification-color-2: #ff6600;
+  border-color: #ffaa00;
+}
+
+.notification-info {
+  --notification-color-1: #00f5ff;
+  --notification-color-2: #0088ff;
+  border-color: #00f5ff;
+}
+
+/* Notification Header */
+.notification-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notification-icon {
+  font-size: 32px;
+  line-height: 1;
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+.notification-title {
+  flex: 1;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--notification-color-1), var(--notification-color-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+}
+
+.notification-close {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.notification-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: rotate(90deg);
+}
+
+/* Notification Body */
+.notification-body {
+  margin-bottom: 16px;
+}
+
+.notification-message {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+}
+
+.notification-details {
+  margin-top: 12px;
+}
+
+.notification-details details {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.notification-details summary {
+  color: var(--notification-color-1);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.notification-details summary:hover {
+  color: var(--notification-color-2);
+}
+
+.notification-details pre {
+  margin: 8px 0 0 0;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  font-size: 12px;
+  color: #cccccc;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Notification Footer */
+.notification-footer {
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.notification-hint {
+  margin: 0;
+  font-size: 14px;
+  color: #aaaaaa;
+  line-height: 1.5;
+}
+
+.notification-hint strong {
+  color: var(--notification-color-1);
+  font-weight: 600;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .notification {
+    min-width: auto;
+    max-width: calc(100vw - 32px);
+    margin: 16px;
+  }
+
+  .notification-title {
+    font-size: 18px;
+  }
+
+  .notification-message {
+    font-size: 14px;
+  }
+
+  .notification-icon {
+    font-size: 28px;
+  }
+}

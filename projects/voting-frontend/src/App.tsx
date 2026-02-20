@@ -1,4 +1,4 @@
-import { SupportedWallet, WalletId, WalletManager, WalletProvider } from '@txnlab/use-wallet-react'
+import { NetworkId, SupportedWallet, WalletId, WalletManager, WalletProvider } from '@txnlab/use-wallet-react'
 import { SnackbarProvider } from 'notistack'
 import Home from './Home'
 import { getAlgodConfigFromViteEnvironment, getKmdConfigFromViteEnvironment } from './utils/network/getAlgoClientConfigs'
@@ -29,15 +29,18 @@ if (import.meta.env.VITE_ALGOD_NETWORK === 'localnet') {
 export default function App() {
   const algodConfig = getAlgodConfigFromViteEnvironment()
 
+  const network = (algodConfig.network || 'testnet') as NetworkId
+  const algodPort = algodConfig.port ? Number(algodConfig.port) : undefined
+
   const walletManager = new WalletManager({
     wallets: supportedWallets,
-    defaultNetwork: algodConfig.network,
+    defaultNetwork: network,
     networks: {
-      [algodConfig.network]: {
+      [network]: {
         algod: {
           baseServer: algodConfig.server,
-          port: algodConfig.port,
-          token: String(algodConfig.token),
+          ...(algodPort !== undefined && { port: algodPort }),
+          token: String(algodConfig.token || ''),
         },
       },
     },
