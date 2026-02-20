@@ -1,7 +1,5 @@
 {
-  "buildCommand": "npm run build:ci",
+  "buildCommand": "cd projects/voting-frontend && npm install && npm run build:ci",
   "outputDirectory": "projects/voting-frontend/dist",
-  "installCommand": "npm install",
-  "framework": "vite",
-  "rootDirectory": "projects/voting-frontend"
+  "framework": "vite"
 }
